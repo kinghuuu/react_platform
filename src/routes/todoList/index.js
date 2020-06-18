@@ -25,7 +25,7 @@ class TodoList extends Component {
     }
 
     render() {
-        console.log('this.props:', this.props)
+        // console.log('this.props:', this.props)
         const { inputValue, list } = this.props
 
         return (
