@@ -6,8 +6,10 @@ import { Layout } from 'antd';
 import storageUtils from '../../utils/storageUtils'
 import Header from '../../components/header'
 import LeftNav from '../../components/left-nav'
+import Main from '../main';
 import TodoList from '../todoList'
 import Test from '../test';
+
 
 const { Sider, Content } = Layout;
 class Home extends Component {
@@ -26,9 +28,10 @@ class Home extends Component {
                     <Header></Header>
                     <Content style={{ margin: '20px', backgroundColor: 'rgb(255,255,255)' }}>
                         <Switch>
+                            <Route path='/main' component={Main}></Route>
                             <Route path='/todoList' component={TodoList}></Route>
                             <Route path='/test' component={Test}></Route>
-                            <Redirect to='/todoList'></Redirect>
+                            <Redirect to='/main'></Redirect>
                         </Switch>
                     </Content>
                 </Layout>

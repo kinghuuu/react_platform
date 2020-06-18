@@ -3,8 +3,8 @@ import _ from 'lodash'
 import { Link, withRouter } from 'react-router-dom'
 import { Menu } from 'antd'
 import {
-    PieChartOutlined,
-    AntDesignOutlined
+    FileOutlined,
+    MenuUnfoldOutlined
 } from '@ant-design/icons';
 import './index.less'
 import logo from '../../assets/images/logo.png'
@@ -26,7 +26,7 @@ class LeftNav extends Component {
                 return (
                     <Menu.Item key={item.key}>
                         <Link to={item.key}>
-                            <PieChartOutlined />
+                            <FileOutlined />
                             {item.title}
                         </Link>
                     </Menu.Item>
@@ -43,7 +43,7 @@ class LeftNav extends Component {
                         key={item.key}
                         title={
                             <span>
-                                <AntDesignOutlined />
+                                <MenuUnfoldOutlined />
                                 {item.title}
                             </span>
                         }
