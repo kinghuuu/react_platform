@@ -15,265 +15,227 @@ const menuList = [
         title: 'antd组件',
         key: '/antdComponents',
         children: [
-            //1-5
+            /*
             {
                 title: '按钮',
-                key: 'antdButton'
+                key: '/antdButton'
             },
             {
                 title: '图标',
-                key: 'antdIcon'
+                key: '/antdIcon'
             },
             {
                 title: '排版',
-                key: 'antdTypography'
+                key: '/antdTypography'
             },
             {
                 title: '分割线',
-                key: 'antdDivider'
+                key: '/antdDivider'
             },
             {
                 title: '栅格',
-                key: 'antdGrid'
-            },
-            //6-10
-            {
-                title: '布局',
-                key: 'antdLayout'
+                key: '/antdGrid'
             },
             {
                 title: '间距',
-                key: 'antdSpace'
-            },
-            {
-                title: '固钉',
-                key: 'antdAffix'
+                key: '/antdSpace'
             },
             {
                 title: '面包屑',
-                key: 'antdBreadcrumb'
+                key: '/antdBreadcrumb'
             },
             {
                 title: '下拉菜单',
-                key: 'antdDropdown'
+                key: '/antdDropdown'
             },
-            //11-15
             {
                 title: '导航菜单',
-                key: 'antdMenu'
+                key: '/antdMenu'
             },
             {
                 title: '分页',
-                key: 'antdPagination'
+                key: '/antdPagination'
             },
             {
                 title: '页头',
-                key: 'antdPageHeader'
+                key: '/antdPageHeader'
             },
             {
                 title: '步骤条',
-                key: 'antdSteps'
+                key: '/antdSteps'
             },
-            {
-                title: '自动完成',
-                key: 'antdAutoComplete'
-            },
-            //16-20
             {
                 title: '多选框',
-                key: 'antdCheckbox'
+                key: '/antdCheckbox'
             },
             {
                 title: '级联选择',
-                key: 'antdCascader'
+                key: '/antdCascader'
             },
-            {
-                title: '日期选择框',
-                key: 'antdDatePicker'
-            },
-            {
-                title: '表单',
-                key: 'antdForm'
-            },
-            {
-                title: '数字输入框',
-                key: 'antdInputNumber'
-            },
-            //21-25
+            */
+
             {
                 title: '输入框',
-                key: 'antdInput'
-            },
-            {
-                title: '提及',
-                key: 'antdMentions'
+                key: '/antdInput'
             },
             {
                 title: '评分',
-                key: 'antdRate'
+                key: '/antdRate'
             },
             {
-                title: '单选框',
-                key: 'antdRadio'
+                title: '单选框等',
+                key: '/antdRadio'
             },
-            {
-                title: '开关',
-                key: 'antdSwitch'
-            },
-            //26-30
-            {
-                title: '滑动输入条',
-                key: 'antdSlider'
-            },
+
             {
                 title: '选择器',
-                key: 'antdSelect'
+                key: '/antdSelect'
             },
             {
                 title: '树选择',
-                key: 'antdTreeSelect'
+                key: '/antdTreeSelect'
             },
             {
                 title: '穿梭框',
-                key: 'antdTransfer'
+                key: '/antdTransfer'
             },
             {
                 title: '时间选择框',
-                key: 'antdTimePicker'
+                key: '/antdTimePicker'
             },
             //31-35
             {
                 title: '上传',
-                key: 'antdUpload'
+                key: '/antdUpload'
             },
             {
                 title: '头像',
-                key: 'antdAvatar'
+                key: '/antdAvatar'
             },
             {
                 title: '徽标数',
-                key: 'antdBadge'
+                key: '/antdBadge'
             },
             {
                 title: '评论',
-                key: 'antdComment'
+                key: '/antdComment'
             },
             {
                 title: '折叠面板',
-                key: 'antdCollapse'
+                key: '/antdCollapse'
             },
             //36-40
             {
                 title: '走马灯',
-                key: 'antdCarousel'
+                key: '/antdCarousel'
             },
             {
                 title: '卡片',
-                key: 'antdCard'
+                key: '/antdCard'
             },
             {
                 title: '日历',
-                key: 'antdCalendar'
+                key: '/antdCalendar'
             },
             {
                 title: '描述列表',
-                key: 'antdDescriptions'
+                key: '/antdDescriptions'
             },
             {
                 title: '空状态',
-                key: 'antdEmpty'
+                key: '/antdEmpty'
             },
             //41-45
             {
                 title: '列表',
-                key: 'antdList'
+                key: '/antdList'
             },
             {
                 title: '气泡卡片',
-                key: 'antdPopover'
+                key: '/antdPopover'
             },
             {
                 title: '统计数值',
-                key: 'antdStatistic'
+                key: '/antdStatistic'
             },
             {
                 title: '树形控件',
-                key: 'antdTree'
+                key: '/antdTree'
             },
             {
                 title: '文字提示',
-                key: 'antdTooltip'
+                key: '/antdTooltip'
             },
             //46-50
             {
                 title: '时间轴',
-                key: 'antdTimeline'
+                key: '/antdTimeline'
             },
             {
                 title: '标签',
-                key: 'antdTag'
+                key: '/antdTag'
             },
             {
                 title: '标签页',
-                key: 'antdTabs'
+                key: '/antdTabs'
             },
             {
                 title: '表格',
-                key: 'antdTable'
+                key: '/antdTable'
             },
             {
                 title: '警告提示',
-                key: 'antdAlert'
+                key: '/antdAlert'
             },
             //51-55
             {
                 title: '抽屉',
-                key: 'antdDrawer'
+                key: '/antdDrawer'
             },
             {
                 title: '对话框',
-                key: 'antdModal'
+                key: '/antdModal'
             },
             {
                 title: '全局提示',
-                key: 'antdMessage'
+                key: '/antdMessage'
             },
             {
                 title: '通知提醒框',
-                key: 'antdNotification'
+                key: '/antdNotification'
             },
             {
                 title: '进度条',
-                key: 'antdProgress'
+                key: '/antdProgress'
             },
             //56-62
             {
                 title: '气泡确认框',
-                key: 'antdPopconfim'
+                key: '/antdPopconfim'
             },
             {
                 title: '结果',
-                key: 'antdResult'
+                key: '/antdResult'
             },
             {
                 title: '加载中',
-                key: 'antdSpin'
+                key: '/antdSpin'
             },
             {
                 title: '骨架屏',
-                key: 'antdSkeleton'
+                key: '/antdSkeleton'
             },
             {
                 title: '锚点',
-                key: 'antdAnchor'
+                key: '/antdAnchor'
             },
             {
                 title: '回到顶部',
-                key: 'antdBackTop'
+                key: '/antdBackTop'
             },
             {
                 title: '全局化配置',
-                key: 'antdConfigProvider'
+                key: '/antdConfigProvider'
             },
         ]
     }

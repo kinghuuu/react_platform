@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash'
 import { withRouter } from 'react-router-dom'
 import { Modal, Button } from 'antd'
-import { ExclamationCircleOutlined } from '@ant-design/icons';
+import { ExclamationCircleOutlined, PoweroffOutlined } from '@ant-design/icons';
 import menuList from '../../utils/menuConfig'
 import storageUtils from '../../utils/storageUtils'
 import './index.less'
@@ -48,7 +48,7 @@ class Header extends Component {
                 <div className='header-title'>{title}</div>
                 <div className='header-user'>
                     <span>欢迎,{username}</span>
-                    <Button type="link" onClick={this.logout}>退出</Button>
+                    <Button type="link" icon={<PoweroffOutlined />} onClick={this.logout}></Button>
                 </div>
             </div>
         );
