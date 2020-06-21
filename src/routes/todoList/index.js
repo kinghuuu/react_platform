@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import './index.less'
-import { Input, Button, List } from 'antd'
-import { changeInputAction, addItemAction, deleteItemAction } from '../../actions/todoList/action'
+import { getTodoList, changeInputAction, addItemAction, deleteItemAction } from '../../actions/todoList/action'
+import IndexUI from './indexUI'
 
 class TodoList extends Component {
+    componentDidMount() {
+        const { dispatch } = this.props
+        const action = getTodoList()
+        dispatch(action)
+    }
 
     changeInputValue = (e) => {
         const { dispatch } = this.props
@@ -29,34 +33,19 @@ class TodoList extends Component {
         const { inputValue, list } = this.props
 
         return (
-            <div style={{ margin: '10px' }} className='todoList'>
-                <div>
-                    <Input
-                        placeholder={inputValue}
-                        style={{ width: '250px', marginRight: '10px' }}
-                        onChange={this.changeInputValue}
-                        value={inputValue}
-                    ></Input>
-                    <Button
-                        type='primary'
-                        onClick={this.clickBtn}
-                    >增加</Button>
-                </div>
-                <div style={{ margin: '10px', width: '300px' }}>
-                    <List
-                        bordered
-                        dataSource={list}
-                        renderItem={(item, index) => (<List.Item
-                            onClick={this.deleteItem.bind(this, index)}
-                        >{item}</List.Item>)}
-                    ></List>
-                </div>
-            </div>
+            <IndexUI
+                inputValue={inputValue}
+                list={list}
+                changeInputValue={this.changeInputValue}
+                clickBtn={this.clickBtn}
+                deleteItem={this.deleteItem.bind(this)}
+            ></IndexUI>
         );
     }
 }
 
 const mapStateToProps = (state) => {
+    // console.log('state:', state)
     const { inputValue, list } = state.todoList
     return { inputValue, list }
 }
