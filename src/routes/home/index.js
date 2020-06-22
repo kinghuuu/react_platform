@@ -11,22 +11,14 @@ import TodoList from '../todoList'
 import Test from '../test';
 import AntdButton from '../antdComponents/antdButton';
 import AntdIcon from '../antdComponents/antdIcon';
-import AntdTypography from '../antdComponents/antdTypography';
-import AntdDivider from '../antdComponents/antdDivider';
-import AntdGrid from '../antdComponents/antdGrid';
 import AntdSpace from '../antdComponents/antdSpace';
-import AntdBreadcrumb from '../antdComponents/antdBreadcrumb';
-import AntdDropdown from '../antdComponents/antdDropdown';
-import AntdMenu from '../antdComponents/antdMenu';
-import AntdPagination from '../antdComponents/antdPagination';
-import AntdPageHeader from '../antdComponents/antdPageHeader';
-import AntdSteps from '../antdComponents/antdSteps';
-import AntdCheckbox from '../antdComponents/antdCheckbox';
-import AntdCascader from '../antdComponents/antdCascader';
 import AntdInput from '../antdComponents/antdInput';
 import AntdRate from '../antdComponents/antdRate';
 import AntdRadio from '../antdComponents/antdRadio';
-import AntdSelect from '../antdComponents/antdSelect';
+import AntdAvatar from '../antdComponents/antdAvatar';
+import AntdCarousel from '../antdComponents/antdCarousel';
+import AntdCard from '../antdComponents/antdCard';
+import AntdResult from '../antdComponents/antdResult';
 
 const { Sider, Content } = Layout;
 class Home extends Component {
@@ -50,22 +42,15 @@ class Home extends Component {
                             <Route path='/test' component={Test}></Route>
                             <Route path='/antdButton' component={AntdButton}></Route>
                             <Route path='/antdIcon' component={AntdIcon}></Route>
-                            <Route path='/antdTypography' component={AntdTypography}></Route>
-                            <Route path='/antdDivider' component={AntdDivider}></Route>
-                            <Route path='/antdGrid' component={AntdGrid}></Route>
                             <Route path='/antdSpace' component={AntdSpace}></Route>
-                            <Route path='/antdBreadcrumb' component={AntdBreadcrumb}></Route>
-                            <Route path='/antdDropdown' component={AntdDropdown}></Route>
-                            <Route path='/antdMenu' component={AntdMenu}></Route>
-                            <Route path='/antdPagination' component={AntdPagination}></Route>
-                            <Route path='/antdPageHeader' component={AntdPageHeader}></Route>
-                            <Route path='/antdSteps' component={AntdSteps}></Route>
-                            <Route path='/antdCheckbox' component={AntdCheckbox}></Route>
-                            <Route path='/antdCascader' component={AntdCascader}></Route>
                             <Route path='/antdInput' component={AntdInput}></Route>
                             <Route path='/antdRate' component={AntdRate}></Route>
                             <Route path='/antdRadio' component={AntdRadio}></Route>
-                            <Route path='/antdSelect' component={AntdSelect}></Route>
+                            <Route path='/antdAvatar' component={AntdAvatar}></Route>
+                            <Route path='/antdCarousel' component={AntdCarousel}></Route>
+                            <Route path='/antdCard' component={AntdCard}></Route>
+                            <Route path='/antdResult' component={AntdResult}></Route>
+
                             <Redirect to='/main'></Redirect>
                         </Switch>
                     </Content>
