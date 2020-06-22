@@ -9,8 +9,9 @@ store --- 状态管理<br/>
 utils --- 工具函数<br/>
 
 ## 笔记
-reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
+#### reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
 
+#### redux、react-redux、redux-thunk概念
 - redux是react状态管理
 - react-redux主要是分离视图和数据, 简化、方便redux. 提供了provider组件,方便跨组件传输数据.<br/>
              还提供connect组件,绑定当前组件和state、dispatch的关系,当前组件通过this.props<br/>
@@ -21,7 +22,7 @@ reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
 
 
 ## axios 用法
-- get请求<br/>
+* ### get请求<br/>
   axios.get('/user?ID=12345')<br/>
     .then(function (response) {<br/>
       console.log(response);<br/>
@@ -30,7 +31,7 @@ reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
       console.log(error);<br/>
     });<br/>
 
-  上面的请求可以这样做<br/>
+  ##### 上面的请求可以这样做<br/>
   axios.get('/user', {<br/>
       params: {<br/>
         ID: 12345<br/>
@@ -43,7 +44,7 @@ reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
       console.log(error);<br/>
     });<br/>
 
-- post请求<br/>
+* ### post请求<br/>
   axios.post('/user', {<br/>
       firstName: 'Fred',<br/>
       lastName: 'Flintstone'<br/>
@@ -55,7 +56,7 @@ reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
       console.log(error);<br/>
     });<br/>
 
-- 执行多个并发请求<br/>
+* ### 执行多个并发请求<br/>
   function getUserAccount() {<br/>
     return axios.get('/user/12345');<br/>
   }<br/>
