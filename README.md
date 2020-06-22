@@ -9,7 +9,14 @@ store --- 状态管理<br/>
 utils --- 工具函数<br/>
 
 ---- 笔记 -------------------------------------------------------------------<br/>
-reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
+1. reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
+2. redux是react状态管理
+   react-redux主要是分离视图和数据, 简化、方便redux. 提供了provider组件,方便跨组件传输数据.
+              还提供connect组件,绑定当前组件和state、dispatch的关系,当前组件通过this.props
+              就可以访问state和dispatch.
+   redux-thunk是redux的中间件，
+              使action可以接收一个函数，函数接收两个参数dispatch和state，可用来处理异步任务.
+
 
 
 
