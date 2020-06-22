@@ -1,4 +1,5 @@
 ## 项目目录介绍:<br/>
+```
 actions --- 存储action及action函数<br/>
 assets --- 存储静态图片资源和共用icon图标<br/>
 components --- 存储共用组件<br/>
@@ -7,6 +8,7 @@ reducers --- 存储reducer<br/>
 routes --- 路由组件<br/>
 store --- 状态管理<br/>
 utils --- 工具函数<br/>
+```
 
 ## 笔记
 #### reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
@@ -21,7 +23,7 @@ utils --- 工具函数<br/>
 
 
 #### axios 用法
-* get请求<br/>
+1. get请求<br/>
   axios.get('/user?ID=12345')<br/>
     .then(function (response) {<br/>
       console.log(response);<br/>
@@ -43,7 +45,7 @@ utils --- 工具函数<br/>
       console.log(error);<br/>
     });<br/>
 
-* post请求<br/>
+2. post请求<br/>
   axios.post('/user', {<br/>
       firstName: 'Fred',<br/>
       lastName: 'Flintstone'<br/>
@@ -54,8 +56,7 @@ utils --- 工具函数<br/>
     .catch(function (error) {<br/>
       console.log(error);<br/>
     });<br/>
-
-* 执行多个并发请求<br/>
+3. 执行多个并发请求<br/>
   function getUserAccount() {<br/>
     return axios.get('/user/12345');<br/>
   }<br/>
