@@ -8,12 +8,12 @@ const defaultState = {
 
 function todoList(state = defaultState, action) {
     if (_.isEqual(CHANGE_INPUT, action.type)) {
-        let newState = JSON.parse(JSON.stringify(state))
-        newState.inputValue = action.value
-        return newState
+        return Object.assign({}, state, {
+            inputValue: action.value
+        })
     }
     if (_.isEqual(ADD_ITEM, action.type)) {
-        let newState = JSON.parse(JSON.stringify(state))
+        let newState = JSON.parse(JSON.stringify(state))   //深拷贝
         newState.list.push(newState.inputValue)
         newState.inputValue = ''
         return newState
@@ -24,9 +24,10 @@ function todoList(state = defaultState, action) {
         return newState
     }
     if (_.isEqual(GET_LIST, action.type)) {
-        let newState = JSON.parse(JSON.stringify(state))
-        newState.list = action.data
-        return newState
+        // console.log('state: ', state)
+        return Object.assign({}, state, {
+            list: action.data
+        })
     }
     return state
 }
