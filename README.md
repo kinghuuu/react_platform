@@ -10,8 +10,11 @@ store --- 状态管理<br/>
 utils --- 工具函数<br/>
 ```
 
+<br/>
+
 ## 笔记
-#### reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
+#### reudx
+reducer里只能接收state,不能改变state,reducer必须是纯函数.<br/>
 
 #### redux、react-redux、redux-thunk概念
 * redux是react状态管理
@@ -34,9 +37,9 @@ Object.assign方法实行的是浅拷贝，而不是深拷贝。<br/>
 但深拷贝会另外创造一个一模一样的对象，新对象跟原对象不共享内存，修改新对象不会改到原对象。
 
 
-#### axios 用法
+### axios 用法
 ```
-* get请求<br/>
+1. get请求<br/>
   axios.get('/user?ID=12345')<br/>
     .then(function (response) {<br/>
       console.log(response);<br/>
@@ -45,7 +48,7 @@ Object.assign方法实行的是浅拷贝，而不是深拷贝。<br/>
       console.log(error);<br/>
     });<br/>
 
-  ##### 上面的请求可以这样做<br/>
+  上面的请求可以这样做<br/>
   axios.get('/user', {<br/>
       params: {<br/>
         ID: 12345<br/>
@@ -58,7 +61,7 @@ Object.assign方法实行的是浅拷贝，而不是深拷贝。<br/>
       console.log(error);<br/>
     });<br/>
 
-* post请求<br/>
+2. post请求<br/>
   axios.post('/user', {<br/>
       firstName: 'Fred',<br/>
       lastName: 'Flintstone'<br/>
@@ -69,7 +72,7 @@ Object.assign方法实行的是浅拷贝，而不是深拷贝。<br/>
     .catch(function (error) {<br/>
       console.log(error);<br/>
     });<br/>
-* 执行多个并发请求<br/>
+3. 执行多个并发请求<br/>
   function getUserAccount() {<br/>
     return axios.get('/user/12345');<br/>
   }<br/>
