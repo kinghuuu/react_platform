@@ -8,7 +8,7 @@ const menuList = [
         key: '/todoList'
     },
     {
-        title: '练习',
+        title: '测试',
         key: '/test'
     },
     {

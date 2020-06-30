@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 
 class Test extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
     render() {
         return (
             <div>
-                Test
+                <h1>test</h1>
             </div>
         );
     }
